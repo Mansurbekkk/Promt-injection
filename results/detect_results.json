@@ -1,0 +1,515 @@
+{
+  "scripts": [
+    "en",
+    "uz-latn",
+    "uz-cyrl",
+    "mixed"
+  ],
+  "corpus": {
+    "n_pos": 168,
+    "n_neg": 160,
+    "results": {
+      "our_l1": {
+        "overall": {
+          "precision": 0.988,
+          "recall": 0.476,
+          "f1": 0.643,
+          "accuracy": 0.729,
+          "fpr": 0.006,
+          "tp": 80,
+          "fp": 1,
+          "tn": 159,
+          "fn": 88,
+          "n": 328
+        },
+        "en": {
+          "precision": 0.972,
+          "recall": 0.833,
+          "f1": 0.897,
+          "accuracy": 0.902,
+          "fpr": 0.025,
+          "tp": 35,
+          "fp": 1,
+          "tn": 39,
+          "fn": 7,
+          "n": 82
+        },
+        "uz-latn": {
+          "precision": 1.0,
+          "recall": 0.833,
+          "f1": 0.909,
+          "accuracy": 0.915,
+          "fpr": 0.0,
+          "tp": 35,
+          "fp": 0,
+          "tn": 40,
+          "fn": 7,
+          "n": 82
+        },
+        "uz-cyrl": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.488,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 40,
+          "fn": 42,
+          "n": 82
+        },
+        "mixed": {
+          "precision": 1.0,
+          "recall": 0.238,
+          "f1": 0.385,
+          "accuracy": 0.61,
+          "fpr": 0.0,
+          "tp": 10,
+          "fp": 0,
+          "tn": 40,
+          "fn": 32,
+          "n": 82
+        }
+      },
+      "deberta": {
+        "overall": {
+          "precision": 0.759,
+          "recall": 0.863,
+          "f1": 0.808,
+          "accuracy": 0.79,
+          "fpr": 0.287,
+          "tp": 145,
+          "fp": 46,
+          "tn": 114,
+          "fn": 23,
+          "n": 328
+        },
+        "en": {
+          "precision": 1.0,
+          "recall": 0.81,
+          "f1": 0.895,
+          "accuracy": 0.902,
+          "fpr": 0.0,
+          "tp": 34,
+          "fp": 0,
+          "tn": 40,
+          "fn": 8,
+          "n": 82
+        },
+        "uz-latn": {
+          "precision": 0.884,
+          "recall": 0.905,
+          "f1": 0.894,
+          "accuracy": 0.89,
+          "fpr": 0.125,
+          "tp": 38,
+          "fp": 5,
+          "tn": 35,
+          "fn": 4,
+          "n": 82
+        },
+        "uz-cyrl": {
+          "precision": 0.61,
+          "recall": 0.857,
+          "f1": 0.713,
+          "accuracy": 0.646,
+          "fpr": 0.575,
+          "tp": 36,
+          "fp": 23,
+          "tn": 17,
+          "fn": 6,
+          "n": 82
+        },
+        "mixed": {
+          "precision": 0.673,
+          "recall": 0.881,
+          "f1": 0.763,
+          "accuracy": 0.72,
+          "fpr": 0.45,
+          "tp": 37,
+          "fp": 18,
+          "tn": 22,
+          "fn": 5,
+          "n": 82
+        }
+      },
+      "distilbert": {
+        "overall": {
+          "precision": 0.581,
+          "recall": 1.0,
+          "f1": 0.735,
+          "accuracy": 0.631,
+          "fpr": 0.756,
+          "tp": 168,
+          "fp": 121,
+          "tn": 39,
+          "fn": 0,
+          "n": 328
+        },
+        "en": {
+          "precision": 0.724,
+          "recall": 1.0,
+          "f1": 0.84,
+          "accuracy": 0.805,
+          "fpr": 0.4,
+          "tp": 42,
+          "fp": 16,
+          "tn": 24,
+          "fn": 0,
+          "n": 82
+        },
+        "uz-latn": {
+          "precision": 0.553,
+          "recall": 1.0,
+          "f1": 0.712,
+          "accuracy": 0.585,
+          "fpr": 0.85,
+          "tp": 42,
+          "fp": 34,
+          "tn": 6,
+          "fn": 0,
+          "n": 82
+        },
+        "uz-cyrl": {
+          "precision": 0.545,
+          "recall": 1.0,
+          "f1": 0.706,
+          "accuracy": 0.573,
+          "fpr": 0.875,
+          "tp": 42,
+          "fp": 35,
+          "tn": 5,
+          "fn": 0,
+          "n": 82
+        },
+        "mixed": {
+          "precision": 0.538,
+          "recall": 1.0,
+          "f1": 0.7,
+          "accuracy": 0.561,
+          "fpr": 0.9,
+          "tp": 42,
+          "fp": 36,
+          "tn": 4,
+          "fn": 0,
+          "n": 82
+        }
+      },
+      "llm_judge": {
+        "overall": {
+          "precision": 0.893,
+          "recall": 0.94,
+          "f1": 0.916,
+          "accuracy": 0.912,
+          "fpr": 0.119,
+          "tp": 158,
+          "fp": 19,
+          "tn": 141,
+          "fn": 10,
+          "n": 328
+        },
+        "en": {
+          "precision": 1.0,
+          "recall": 0.881,
+          "f1": 0.937,
+          "accuracy": 0.939,
+          "fpr": 0.0,
+          "tp": 37,
+          "fp": 0,
+          "tn": 40,
+          "fn": 5,
+          "n": 82
+        },
+        "uz-latn": {
+          "precision": 1.0,
+          "recall": 0.929,
+          "f1": 0.963,
+          "accuracy": 0.963,
+          "fpr": 0.0,
+          "tp": 39,
+          "fp": 0,
+          "tn": 40,
+          "fn": 3,
+          "n": 82
+        },
+        "uz-cyrl": {
+          "precision": 0.952,
+          "recall": 0.952,
+          "f1": 0.952,
+          "accuracy": 0.951,
+          "fpr": 0.05,
+          "tp": 40,
+          "fp": 2,
+          "tn": 38,
+          "fn": 2,
+          "n": 82
+        },
+        "mixed": {
+          "precision": 0.712,
+          "recall": 1.0,
+          "f1": 0.832,
+          "accuracy": 0.793,
+          "fpr": 0.425,
+          "tp": 42,
+          "fp": 17,
+          "tn": 23,
+          "fn": 0,
+          "n": 82
+        }
+      }
+    }
+  },
+  "public": {
+    "n": 116,
+    "results": {
+      "our_l1": {
+        "overall": {
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.333,
+          "accuracy": 0.586,
+          "fpr": 0.0,
+          "tp": 12,
+          "fp": 0,
+          "tn": 56,
+          "fn": 48,
+          "n": 116
+        },
+        "en": {
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.333,
+          "accuracy": 0.586,
+          "fpr": 0.0,
+          "tp": 12,
+          "fp": 0,
+          "tn": 56,
+          "fn": 48,
+          "n": 116
+        },
+        "uz-latn": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "uz-cyrl": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "mixed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        }
+      },
+      "deberta": {
+        "overall": {
+          "precision": 1.0,
+          "recall": 0.367,
+          "f1": 0.537,
+          "accuracy": 0.672,
+          "fpr": 0.0,
+          "tp": 22,
+          "fp": 0,
+          "tn": 56,
+          "fn": 38,
+          "n": 116
+        },
+        "en": {
+          "precision": 1.0,
+          "recall": 0.367,
+          "f1": 0.537,
+          "accuracy": 0.672,
+          "fpr": 0.0,
+          "tp": 22,
+          "fp": 0,
+          "tn": 56,
+          "fn": 38,
+          "n": 116
+        },
+        "uz-latn": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "uz-cyrl": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "mixed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        }
+      },
+      "distilbert": {
+        "overall": {
+          "precision": 1.0,
+          "recall": 0.817,
+          "f1": 0.899,
+          "accuracy": 0.905,
+          "fpr": 0.0,
+          "tp": 49,
+          "fp": 0,
+          "tn": 56,
+          "fn": 11,
+          "n": 116
+        },
+        "en": {
+          "precision": 1.0,
+          "recall": 0.817,
+          "f1": 0.899,
+          "accuracy": 0.905,
+          "fpr": 0.0,
+          "tp": 49,
+          "fp": 0,
+          "tn": 56,
+          "fn": 11,
+          "n": 116
+        },
+        "uz-latn": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "uz-cyrl": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "mixed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        }
+      },
+      "llm_judge": {
+        "overall": {
+          "precision": 0.956,
+          "recall": 0.717,
+          "f1": 0.819,
+          "accuracy": 0.836,
+          "fpr": 0.036,
+          "tp": 43,
+          "fp": 2,
+          "tn": 54,
+          "fn": 17,
+          "n": 116
+        },
+        "en": {
+          "precision": 0.956,
+          "recall": 0.717,
+          "f1": 0.819,
+          "accuracy": 0.836,
+          "fpr": 0.036,
+          "tp": 43,
+          "fp": 2,
+          "tn": 54,
+          "fn": 17,
+          "n": 116
+        },
+        "uz-latn": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "uz-cyrl": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        },
+        "mixed": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "accuracy": 0.0,
+          "fpr": 0.0,
+          "tp": 0,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "n": 0
+        }
+      }
+    }
+  }
+}
